@@ -3,7 +3,6 @@ describe("Open Application", () => {
         const nameField = await $(
             '//android.widget.EditText[@resource-id="com.fghilmany.dietmealapp:id/et_name"]'
         );
-        await nameField.waitForDisplayed({ timeout: 3000 });
         await nameField.click();
         await nameField.setValue("Budi");
 
